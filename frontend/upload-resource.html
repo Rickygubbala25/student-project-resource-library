@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Upload Resource | Student Project Library</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Upload Resource</h1>
+
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <h2>Upload Project Resource</h2>
+
+    <p id="message"></p>
+
+    <form id="resourceForm">
+
+      <label>Resource Title</label>
+      <input
+        type="text"
+        name="title"
+        placeholder="Example: Project Documentation"
+        required
+      >
+
+      <label>Description</label>
+      <textarea
+        name="description"
+        placeholder="Enter resource description"
+      ></textarea>
+
+      <label>Resource Type</label>
+      <select name="resourceType">
+        <option value="PDF">PDF</option>
+        <option value="Document">Document</option>
+        <option value="Presentation">Presentation</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label>Project ID</label>
+      <input
+        type="number"
+        name="projectId"
+        placeholder="Example: 1"
+        required
+      >
+
+      <label>Select File</label>
+      <input
+        type="file"
+        name="file"
+        required
+      >
+
+      <button type="submit">
+        Upload Resource
+      </button>
+
+    </form>
+
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/upload-resource.js"></script>
+
+</body>
+</html>

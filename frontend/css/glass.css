@@ -1,0 +1,4 @@
+/* Reusable glassmorphism layer */
+.glass{background:var(--white);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,.7);box-shadow:var(--shadow)}
+.glass:hover{box-shadow:0 28px 80px rgba(20,30,50,.13)}
+.glass-input{background:rgba(255,255,255,.48);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.7)}

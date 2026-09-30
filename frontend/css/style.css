@@ -1,0 +1,16 @@
+.submit-project-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-top: 20px;
+  background: #111827;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.submit-project-btn:hover {
+  background: #374151;
+  transform: translateY(-1px);
+}

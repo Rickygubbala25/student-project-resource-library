@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Submit Project | Student Project Library</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/submit-project.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Submit Your Project</h1>
+
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Project Submission</h2>
+
+    <p id="message"></p>
+
+    <form id="projectForm">
+
+      <label>Project Title</label>
+      <input type="text" name="title" required>
+
+      <label>Abstract</label>
+      <textarea name="abstract"></textarea>
+
+      <label>Problem Statement</label>
+      <textarea name="problemStatement"></textarea>
+
+      <label>Objectives</label>
+      <textarea name="objectives"></textarea>
+
+      <label>Description</label>
+      <textarea name="description"></textarea>
+
+      <label>Technologies</label>
+      <input type="text" name="technologies">
+
+      <label>Department</label>
+      <input type="text" name="department">
+
+      <label>Difficulty</label>
+      <select name="difficulty">
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+      </select>
+
+      <label>Project Type</label>
+      <input type="text" name="projectType">
+
+      <button type="submit">Submit Project</button>
+
+    </form>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/submit-project.js"></script>
+
+</body>
+</html>
